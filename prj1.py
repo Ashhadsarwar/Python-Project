@@ -1,0 +1,18 @@
+"Guessing random Numbers"
+print("Welcome to game 'Gussing random numbers'")
+import random
+
+numberToGuess = random.randrange(100)
+chances = 4
+guessCounter = 0
+while guessCounter <= chances:
+    guessCounter += 1
+    num = int(input("Enter your Number: "))
+    if num == numberToGuess:
+        print("your guess is correct!")
+        print(f"your number: {num}  guessed Number: {numberToGuess}")
+    else:
+        print("Your guess is wrong")
+        print(f"Ypur Number: {num} guessed Number: {numberToGuess}")
+
+    print(f"Number of chance used: {guessCounter}")
